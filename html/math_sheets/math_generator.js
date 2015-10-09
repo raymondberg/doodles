@@ -1,3 +1,18 @@
+function rot14incremented(original, reverse){
+    if (reverse == undefined) { reverse = false; }
+    ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    var from_string = original.toUpperCase();
+    var modifier = reverse ? -1 : 1;
+    var return_string = "";
+    for(var i = 0; i<from_string.length; i++){
+        var character = from_string.charAt(i);
+        var old_position = ALPHABET.indexOf(from_string.charAt(i));
+        var new_position = (old_position + 14*modifier + i*modifier ) % ALPHABET.length;
+        if (new_position < 0) new_position += ALPHABET.length;
+        return_string += ALPHABET.charAt(new_position);
+    }
+    return return_string;
+}
 
 function parse(val) {
     var result = "Not found",
@@ -15,7 +30,7 @@ function parse(val) {
 }
 var PUZZLE_SOLUTION="ABOMINABLE SNOWMAN";
 if (parse("puzzle") != "Not found") {
-    PUZZLE_SOLUTION = parse("puzzle").toUpperCase();
+    PUZZLE_SOLUTION = rot14incremented(parse("puzzle"),true);
 }
 console.log(PUZZLE_SOLUTION);
 
