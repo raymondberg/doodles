@@ -28,22 +28,20 @@
     <!-- <script> put_table();</script> -->
     <div class="container">
       <div>
-        <form action="./index.html" method="get">
-          <table>
-            <tr>
-              <td width="40%">
-                <input type="button" value="Try a new random puzzle!" onclick='goto_random_puzzle()' />
-              </td>
-              <td>
-                or
-              </td>
-              <td width="40%">
-                Create your own puzzle: <input id="puzzle_field" type="input" name="puzzle"/>
-                <input type="button" value="Make it!" onclick="submit_form()"/>
-              </td>
-            </tr>
-          </table>
-        </form>
+        <table>
+          <tr>
+            <td width="40%">
+              <input type="button" value="Try a new random puzzle!" onclick='goto_random_puzzle()' />
+            </td>
+            <td>
+              or
+            </td>
+            <td width="40%">
+              Create your own puzzle: <input id="puzzle_field" type="input" name="puzzle"/>
+              <input type="button" value="Make it!" onclick="submit_form()"/>
+            </td>
+          </tr>
+        </table>
       </div>
       <div style="padding:10px; border: 1px solid blue; background-color:#DDF;text-align:center; width: 50%; margin: 10px"  id="revealed_solution"></div>
       <script> put_expressions();</script>
