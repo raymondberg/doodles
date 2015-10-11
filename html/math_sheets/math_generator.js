@@ -1,39 +1,14 @@
-function rot14incremented(original, reverse){
-    if (reverse == undefined) { reverse = false; }
-    ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    var from_string = original.toUpperCase();
-    var modifier = reverse ? -1 : 1;
-    var return_string = "";
-    for(var i = 0; i<from_string.length; i++){
-        var character = from_string.charAt(i);
-        var old_position = ALPHABET.indexOf(from_string.charAt(i));
-        var new_position = (old_position + 14*modifier + i*modifier ) % ALPHABET.length;
-        if (new_position < 0) new_position += ALPHABET.length;
-        return_string += ALPHABET.charAt(new_position);
-    }
-    return return_string;
-}
+/*
+*
+*/
 
-function parse(val) {
-    var result = "Not found",
-        tmp = [];
-    location.search
-    //.replace ( "?", "" )
-    // this is better, there might be a question mark inside
-    .substr(1)
-        .split("&")
-        .forEach(function (item) {
-        tmp = item.split("=");
-        if (tmp[0] === val) result = decodeURIComponent(tmp[1]);
-    });
-    return result;
-}
-var PUZZLE_SOLUTION="ABOMINABLE SNOWMAN";
-if (parse("puzzle") != "Not found") {
-    PUZZLE_SOLUTION = rot14incremented(parse("puzzle"),true);
-}
-console.log(PUZZLE_SOLUTION);
-
+var PUZZLE_PACK = [
+    "A man a plan a canal: panama","For score and seven years ago","Who's on first?",
+    "Wallace and Gromit","Math is fun","Mount Olympus","The Cubs","The Bears",
+    "Barack Obama","Michelle Obama", "John McCain", "Bruce Rauner", "Rahm Emmanuel",
+    "Fifty States", "Thirteen colonies", "Chicago fire", "Three-hundred and sixty five days",
+    "Gordon Ramsay","Futon Mattress","Rick and Morty"
+];
 var LETTER_OPTIONS = {
     "A": {
         "numeric_value": 1,
@@ -259,6 +234,7 @@ var LETTER_OPTIONS = {
         "options": [
             {"difficulty" : 1, "prompt": "It's forty-six divided by two"},
             {"difficulty" : 1, "prompt": "It's thirty minus seven"},
+            {"difficulty" : 1, "prompt": "It's one less than two dozen"},
             {"difficulty" : 1, "prompt": "It's sixteen plus seven"}
         ]
     },
@@ -270,7 +246,8 @@ var LETTER_OPTIONS = {
             {"difficulty" : 1, "prompt": "It's six times four"},
             {"difficulty" : 1, "prompt": "It's half of forty-eight"},
             {"difficulty" : 1, "prompt": "It's seventy-two divided by three"},
-            {"difficulty" : 1, "prompt": "It's thirty-six minus twelve"}
+            {"difficulty" : 1, "prompt": "It's thirty-six minus twelve"},
+            {"difficulty" : 1, "prompt": "It's two dozen"}
         ]
     },
     "Y": {
@@ -297,8 +274,10 @@ var LETTER_OPTIONS = {
     }
 }
 
-function random_choice(arr) {
-    return arr[Math.floor(Math.random() * arr.length)];
+var PUZZLE_OFFSET_AMOUNT = 14;
+var PUZZLE_SOLUTION="ABOMINABLE SNOWMAN";
+if (parse_get_parameter("puzzle") != "Not found") {
+    PUZZLE_SOLUTION = caesar_cipher(parse_get_parameter("puzzle",true), -1 * PUZZLE_OFFSET_AMOUNT);
 }
 
 function put_table() {
@@ -357,8 +336,21 @@ function populate_solution() {
             revealed_solution += " _";
         }
     }
-
     document.getElementById("revealed_solution").innerHTML = revealed_solution;
+}
+
+function redirect_to_new_puzzle(puzzle) {
+    window.location = "./index.html?puzzle=" + caesar_cipher(puzzle, PUZZLE_OFFSET_AMOUNT);
+}
+
+function submit_form() {
+    var puzzle_proposal = document.getElementById("puzzle_field").value;
+    puzzle_proposal = puzzle_proposal.replace(/[^a-z]/gi ,"");
+    redirect_to_new_puzzle(puzzle_proposal);
+}
+
+function goto_random_puzzle() {
+    redirect_to_new_puzzle(random_choice(PUZZLE_PACK));
 }
 
 setInterval(populate_solution, 1000);
