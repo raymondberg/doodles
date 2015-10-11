@@ -340,12 +340,12 @@ function populate_solution() {
 }
 
 function redirect_to_new_puzzle(puzzle) {
-    window.location = "./index.html?puzzle=" + caesar_cipher(puzzle, PUZZLE_OFFSET_AMOUNT);
+    var puzzle_proposal = puzzle.replace(/[^a-z]/gi ,"");
+    window.location = "./?puzzle=" + caesar_cipher(puzzle_proposal, PUZZLE_OFFSET_AMOUNT);
 }
 
 function submit_form() {
     var puzzle_proposal = document.getElementById("puzzle_field").value;
-    puzzle_proposal = puzzle_proposal.replace(/[^a-z]/gi ,"");
     redirect_to_new_puzzle(puzzle_proposal);
 }
 
