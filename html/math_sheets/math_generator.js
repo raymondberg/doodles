@@ -106,6 +106,7 @@ var LETTER_OPTIONS = {
             {"difficulty" : 1,"prompt": "It's two times five"},
             {"difficulty" : 1,"prompt": "It's one-hundred divided by ten"},
             {"difficulty" : 1,"prompt": "It's fifty divided by five"},
+            {"difficulty" : 1,"prompt": "It's one-hundred and fifty divided by ten"},
             {"difficulty" : 1,"prompt": "It's the square root of one-hundred"},
             {"difficulty" : 1,"prompt": "It's six hundred divided by sixty"},
             {"difficulty" : 1,"prompt": "It's two and a half times four"}
@@ -154,9 +155,9 @@ var LETTER_OPTIONS = {
         "options": [
             {"difficulty" : 1,"prompt": "It's five times three"},
             {"difficulty" : 1,"prompt": "It's forty-five divided by three"},
-            {"difficulty" : 1,"prompt": "It's one-hundred and fifty divided by fifteen"},
+            {"difficulty" : 1,"prompt": "It's one-hundred and fifty divided by ten"},
             {"difficulty" : 1,"prompt": "It's thirty divided by two"},
-            {"difficulty" : 1,"prompt": "It's eight plus seen"}
+            {"difficulty" : 1,"prompt": "It's eight plus seven"}
         ]
     },
     "P": {
