@@ -13,18 +13,14 @@ var LETTER_OPTIONS = {
     "A": {
         "numeric_value": 1,
         "options": [
-            {"difficulty" : 1,"prompt": "It's the square root of 1"},
-            {"difficulty" : 1,"prompt": "It's the difference of six and five"},
-            {"difficulty" : 1,"prompt": "It's thirty-seven divided by thirty-seven"},
-            {"difficulty" : 1,"prompt": "It's negative four plus five"},
-            {"difficulty" : 1,"prompt": "It's fifty minus forty-nine"}
+            {"difficulty" : 1,"prompt": "It's the square root of one"},
+            {"difficulty" : 1,"prompt": "It's thirty-seven divided by thirty-seven"}
         ]
     },
     "B": {
         "numeric_value": 2,
         "options": [
             {"difficulty" : 1,"prompt": "It's the square root of four"},
-            {"difficulty" : 1,"prompt": "It's six plus negative four"},
             {"difficulty" : 1,"prompt": "It's twelve divided by six"},
             {"difficulty" : 1,"prompt": "It's four divided by two"},
             {"difficulty" : 1,"prompt": "It's twenty-four divided by twelve"},
@@ -35,8 +31,6 @@ var LETTER_OPTIONS = {
         "numeric_value": 3,
         "options": [
             {"difficulty" : 1,"prompt": "It's the square root of nine"},
-            {"difficulty" : 1,"prompt": "It's eight minus five"},
-            {"difficulty" : 1,"prompt": "It's twelve minus nine"},
             {"difficulty" : 1,"prompt": "It's sixty divided by twenty"},
             {"difficulty" : 1,"prompt": "It's fifteen divided by five"}
         ]
@@ -55,9 +49,8 @@ var LETTER_OPTIONS = {
         "options": [
             {"difficulty" : 1,"prompt": "It's thirty divided by six"},
             {"difficulty" : 1,"prompt": "It's the square root of twenty-five"},
-            {"difficulty" : 1,"prompt": "It's ten plus negative five"},
             {"difficulty" : 1,"prompt": "It's twenty-five divided by five"},
-            {"difficulty" : 1,"prompt": "It's forty-five divided by nine"},
+            {"difficulty" : 1,"prompt": "It's forty-five divided by nine"}
         ]
     },
     "F": {
@@ -67,7 +60,7 @@ var LETTER_OPTIONS = {
             {"difficulty" : 1,"prompt": "It's twelve divided by two"},
             {"difficulty" : 1,"prompt": "It's the square root of thirty-six"},
             {"difficulty" : 1,"prompt": "It's sixty divided by ten"},
-            {"difficulty" : 1,"prompt": "It's three times two"},
+            {"difficulty" : 1,"prompt": "It's three times two"}
         ]
     },
     "G": {
@@ -85,8 +78,7 @@ var LETTER_OPTIONS = {
             {"difficulty" : 1,"prompt": "It's two cubed"},
             {"difficulty" : 1,"prompt": "It's four times two"},
             {"difficulty" : 1,"prompt": "It's the square root of sixty four"},
-            {"difficulty" : 1,"prompt": "It's sixty-four divided by eight"},
-            {"difficulty" : 1,"prompt": "It's twelve minus four"}
+            {"difficulty" : 1,"prompt": "It's sixty-four divided by eight"}
         ]
     },
     "I": {
@@ -115,10 +107,7 @@ var LETTER_OPTIONS = {
     "K": {
         "numeric_value": 11,
         "options": [
-            {"difficulty" : 1,"prompt": "It's sixty-six divided by six"},
-            {"difficulty" : 1,"prompt": "It's fifteen minus four"},
-            {"difficulty" : 1,"prompt": "It's five plus six"},
-            {"difficulty" : 1,"prompt": "It's one dozen minus one"}
+            {"difficulty" : 1,"prompt": "It's sixty-six divided by six"}
         ]
     },
     "L": {
@@ -126,7 +115,6 @@ var LETTER_OPTIONS = {
         "options": [
             {"difficulty" : 1,"prompt": "It's three times four"},
             {"difficulty" : 1,"prompt": "It's twenty-four divided by two"},
-            {"difficulty" : 1,"prompt": "It's sixteen minus four"},
             {"difficulty" : 1,"prompt": "It's six times two"}
 
         ]
@@ -135,10 +123,7 @@ var LETTER_OPTIONS = {
         "numeric_value": 13,
         "options": [
             {"difficulty" : 1,"prompt": "It's a bakers dozen"},
-            {"difficulty" : 1,"prompt": "It's nine plus four"},
-            {"difficulty" : 1,"prompt": "It's twenty-six divided by two"},
-            {"difficulty" : 1,"prompt": "It's twenty-one minus eight"},
-            {"difficulty" : 1,"prompt": "It's seven plus six"}
+            {"difficulty" : 1,"prompt": "It's twenty-six divided by two"}
         ]
     },
     "N": {
@@ -146,8 +131,7 @@ var LETTER_OPTIONS = {
         "options": [
             {"difficulty" : 1,"prompt": "It's seven times two"},
             {"difficulty" : 1,"prompt": "It's twenty-eight divided by two"},
-            {"difficulty" : 1,"prompt": "It's fourty-two divided by three"},
-            {"difficulty" : 1,"prompt": "It's nine plus five"}
+            {"difficulty" : 1,"prompt": "It's fourty-two divided by three"}
         ]
     },
     "O": {
@@ -156,8 +140,7 @@ var LETTER_OPTIONS = {
             {"difficulty" : 1,"prompt": "It's five times three"},
             {"difficulty" : 1,"prompt": "It's forty-five divided by three"},
             {"difficulty" : 1,"prompt": "It's one-hundred and fifty divided by ten"},
-            {"difficulty" : 1,"prompt": "It's thirty divided by two"},
-            {"difficulty" : 1,"prompt": "It's eight plus seven"}
+            {"difficulty" : 1,"prompt": "It's thirty divided by two"}
         ]
     },
     "P": {
@@ -172,9 +155,7 @@ var LETTER_OPTIONS = {
     "Q": {
         "numeric_value": 17,
         "options": [
-            {"difficulty" : 1,"prompt": "It's twelve plus five"},
-            {"difficulty" : 1,"prompt": "It's thirty-four divided by two"},
-            {"difficulty" : 1,"prompt": "It's eight plus nine"}
+            {"difficulty" : 1,"prompt": "It's thirty-four divided by two"}
         ]
     },
     "R": {
@@ -189,18 +170,11 @@ var LETTER_OPTIONS = {
     "S": {
         "numeric_value": 19,
         "options": [
-            {"difficulty" : 1, "prompt": "It's twenty-five minus six"},
-            {"difficulty" : 1, "prompt": "It's twelve plus seven"},
-            {"difficulty" : 1, "prompt": "It's twenty-nine minus ten"},
-            {"difficulty" : 1, "prompt": "It's four plus fifteen"},
-            {"difficulty" : 1, "prompt": "It's twenty plus negative one"}
         ]
     },
     "T": {
         "numeric_value": 20,
         "options": [
-            {"difficulty" : 1, "prompt": "It's fifty minus thirty"},
-            {"difficulty" : 1, "prompt": "It's fifteen plus five"},
             {"difficulty" : 1, "prompt": "It's the number of toes"},
             {"difficulty" : 1, "prompt": "It's forty divided by two"},
             {"difficulty" : 1, "prompt": "It's ten times two"},
@@ -213,30 +187,21 @@ var LETTER_OPTIONS = {
         "options": [
             {"difficulty" : 1, "prompt": "It's seven times three"},
             {"difficulty" : 1, "prompt": "It's forty-two divided by two"},
-            {"difficulty" : 1, "prompt": "It's thirty minus nine"},
-            {"difficulty" : 1, "prompt": "It's sixty-three divided by three"},
-            {"difficulty" : 1, "prompt": "It's nine plus twelve"}
+            {"difficulty" : 1, "prompt": "It's sixty-three divided by three"}
         ]
     },
     "V": {
         "numeric_value": 22,
         "options": [
             {"difficulty" : 1, "prompt": "It's eleven times two"},
-            {"difficulty" : 1, "prompt": "It's fourteen plus eight"},
-            {"difficulty" : 1, "prompt": "It's ten plus twelve"},
-            {"difficulty" : 1, "prompt": "It's forty-four divided by two"},
-            {"difficulty" : 1, "prompt": "It's thirty-six minus fourteen"},
-            {"difficulty" : 1, "prompt": "It's sixteen plus six"}
-
+            {"difficulty" : 1, "prompt": "It's forty-four divided by two"}
         ]
     },
     "W": {
         "numeric_value": 23,
         "options": [
             {"difficulty" : 1, "prompt": "It's forty-six divided by two"},
-            {"difficulty" : 1, "prompt": "It's thirty minus seven"},
-            {"difficulty" : 1, "prompt": "It's one less than two dozen"},
-            {"difficulty" : 1, "prompt": "It's sixteen plus seven"}
+            {"difficulty" : 1, "prompt": "It's one less than two dozen"}
         ]
     },
     "X": {
@@ -247,7 +212,6 @@ var LETTER_OPTIONS = {
             {"difficulty" : 1, "prompt": "It's six times four"},
             {"difficulty" : 1, "prompt": "It's half of forty-eight"},
             {"difficulty" : 1, "prompt": "It's seventy-two divided by three"},
-            {"difficulty" : 1, "prompt": "It's thirty-six minus twelve"},
             {"difficulty" : 1, "prompt": "It's two dozen"}
         ]
     },
@@ -257,8 +221,6 @@ var LETTER_OPTIONS = {
             {"difficulty" : 1, "prompt": "It's five times five"},
             {"difficulty" : 1, "prompt": "It's five squared"},
             {"difficulty" : 1, "prompt": "It's two and a half times ten"},
-            {"difficulty" : 1, "prompt": "It's seventy-five minus fifty"},
-            {"difficulty" : 1, "prompt": "It's thirty minus five"},
             {"difficulty" : 1, "prompt": "It's one-hundred divided by four"}
         ]
     },
@@ -266,14 +228,54 @@ var LETTER_OPTIONS = {
         "numeric_value": 26,
         "options": [
             {"difficulty" : 1, "prompt": "It's thirteen times two"},
-            {"difficulty" : 1, "prompt": "It's two dozen plus two"},
             {"difficulty" : 1, "prompt": "It's half of fourty-six"},
             {"difficulty" : 1, "prompt": "It's four squared and ten"},
-            {"difficulty" : 1, "prompt": "It's 2.25 years in months"},
-            {"difficulty" : 1, "prompt": "It's thirty minus four"}
+            {"difficulty" : 1, "prompt": "It's 2.25 years in months"}
         ]
     }
 }
+
+NUMBER_NAMES = [
+    "zero","one","two","three","four","five","six","seven","eight","nine",
+    "ten","eleven","twelve","thirteen","fourteen","fifteen","sixteen","seventeen","eightteen","nineteen",
+    "twenty","twenty-one","twenty-two","twenty-three","twenty-four","twenty-five","twenty-six","twenty-seven","twenty-eight","twenty-nine",
+    "thirty","thirty-one","thirty-two","thirty-three","thirty-four","thirty-five","thirty-six","thirty-seven","thirty-eight","thirty-nine",
+    "forty","forty-one","forty-two","forty-three","forty-four","forty-five","forty-six","forty-seven","forty-eight","forty-nine",
+    "fifty","fifty-one","fifty-two","fifty-three","fifty-four","fifty-five","fifty-six","fifty-seven","fifty-eight","fifty-nine",
+    "sixty","sixty-one","sixty-two","sixty-three","sixty-four","sixty-five","sixty-six","sixty-seven","sixty-eight","sixty-nine"
+]
+
+function random_integer(lowerBound,upperBound){
+   return Math.floor(Math.random()*(upperBound - lowerBound)) + lowerBound;
+}
+
+function generate_questions(type,count) {
+    if(count == undefined) { count = 50; }
+
+    for(option in LETTER_OPTIONS) {
+        for(var i=0; i < count; i++) {
+            var numeric_answer,first_number,second_number,prompt;
+            if (type == "difference") {
+                numeric_answer = LETTER_OPTIONS[option]["numeric_value"];
+                first_number = random_integer(numeric_answer,69);
+                second_number = first_number - numeric_answer;
+                prompt = "It's the difference of " + NUMBER_NAMES[first_number] + " and " + NUMBER_NAMES[second_number];
+            } else if (type == "plus") {
+                numeric_answer = LETTER_OPTIONS[option]["numeric_value"];
+                first_number = random_integer(0,numeric_answer);
+                second_number = numeric_answer - first_number;
+                prompt = "It's " + NUMBER_NAMES[first_number] + " plus " + NUMBER_NAMES[second_number];
+            } else {
+                console.error("Unknown option: " + type + ". Aborting generation.");
+                return;
+            }
+            LETTER_OPTIONS[option]["options"].push({"difficulty":1,"prompt":prompt});
+        }
+    }
+}
+
+generate_questions("difference",10);
+generate_questions("plus",10);
 
 var PUZZLE_OFFSET_AMOUNT = 14;
 var PUZZLE_SOLUTION="ABOMINABLE SNOWMAN";
