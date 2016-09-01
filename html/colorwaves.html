@@ -5,7 +5,7 @@
 <!--//Comment
 var GRAPH_WIDTH = 5000;
 var BASE_GAP = 10;
-var VERTICAL_OFFSET = 600;
+var VERTICAL_OFFSET = 400;
 var NODE_WIDTH = 1;
 var NODE_HEIGHT = 1;
 function setOffset() {
@@ -27,7 +27,7 @@ var cfgs = [
 	[30,60,90],
 	[30,40,70],
 	[19.5, 20, 20.5],
-	]; 
+	];
 
 function clearGraph() {
 	var graph = document.getElementById("graph");
@@ -82,7 +82,7 @@ function drawPoint(pX, pY,color){
 	//document.write("<div class='box' style='"+styleparam+"'></div>\n");
 }
 var COLOR_MULTIPLIER= 140;//multiplier (1-255);
-function colorFraction(r,g,b){	
+function colorFraction(r,g,b){
 	return ["rgb(",Math.floor(r*COLOR_MULTIPLIER),",",Math.floor(g*COLOR_MULTIPLIER),",",Math.floor(b*COLOR_MULTIPLIER),")"].join('');
 }
 
